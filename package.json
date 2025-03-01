@@ -1,18 +1,18 @@
 {
-  "name": "---replace-me---",
+  "name": "odin-weather",
   "version": "1.0.0",
-  "description": "---replace-me---",
+  "description": "Weather app for The Odin Project",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sveldevorls/webpack-template.git"
+    "url": "git+https://github.com/Sveldevorls/odin-weather.git"
   },
   "author": "Sveldevorls",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sveldevorls/webpack-template/issues"
+    "url": "https://github.com/Sveldevorls/odin-weather/issues"
   },
-  "homepage": "https://github.com/Sveldevorls/webpack-template#readme",
+  "homepage": "https://github.com/Sveldevorls/odin-weather#readme",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-loader": "^5.1.0",
