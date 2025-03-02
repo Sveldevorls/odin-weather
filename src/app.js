@@ -1,4 +1,5 @@
 const GEOCODING_API = "https://geocoding-api.open-meteo.com/v1/search";
+const WEATHER_API = "https://api.open-meteo.com/v1/forecast";
 
 export const getLocationCoord = async (location) => {
     try {
@@ -8,10 +9,15 @@ export const getLocationCoord = async (location) => {
         if (data.hasOwnProperty("results")) {
             return [data.results[0]["latitude"], data.results[0]["longitude"]]
         } else {
-            return new Error(`${location} not found`);
+            throw new Error(`Unknown location "${location}"`)
         }
-    } catch (error) {
-        return error
     }
+    catch (error) {
+        throw error
+    }
+}
+
+export const getWeather = async (lat, long) => {
+    console.log("123");
 }
 

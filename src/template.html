@@ -8,10 +8,15 @@
 <body>
     <div class="app">
         <div class="header">
-            <input type="search" id="search" placeholder="Enter your city/town here">
-            <input type="image" id="submit" src="./img/search.svg" alt="Submit">
+            <form id="form">
+                <input type="search" id="search" placeholder="Enter your city/town here">
+                <input type="image" id="submit" src="./img/search.svg" alt="Submit">
+            </form>
         </div>
-        <div class="result"></div>
+        <div class="result">
+            <div class="error"></div>
+            <div class="weather"></div>
+        </div>
     </div>
 </body>
 </html>
