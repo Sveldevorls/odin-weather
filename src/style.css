@@ -2,7 +2,6 @@
     --background-main: #1c1d22;
     --background-secondary: #40444b;
     --text-color: #eeeeee;
-
     --warning-background: #c13d3d;
 }
 
@@ -79,6 +78,9 @@ input {
 }
 
 .error {
+    position: fixed;
+    bottom: 0.5lh;
+
     visibility: hidden;
     display: flex;
     flex-direction: column;
@@ -88,6 +90,7 @@ input {
     min-height: 3lh;
     min-width: 20em;
     margin: 0.5lh 0;
+    padding: 0 1em;
     border-radius: 0.5lh;
     font-size: 1.2rem;
     background-color: var(--warning-background);
@@ -95,4 +98,18 @@ input {
     &.visible {
         visibility: visible;
     }
+}
+
+.weather-current {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: var(--background-secondary);
+    min-width: 15em;
+    min-height: 10lh;
+    border-radius: 1lh;
+    margin-top: 2lh;
+    padding: 1em;
 }
